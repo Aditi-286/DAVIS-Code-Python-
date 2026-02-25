@@ -1,10 +1,8 @@
 # Read number
-num = float(input())
+num = int(input())
 
-# Check condition
-if num > 0:
-    print("Positive")
-elif num < 0:
-    print("Negative")
+# Check using bitwise operator
+if num & 1 == 0:
+    print("Even")
 else:
-    print("Zero")
+    print("Odd")
