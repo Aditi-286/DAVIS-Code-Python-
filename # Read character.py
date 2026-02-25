@@ -1,10 +1,10 @@
 # Read character
-ch = input().lower()
+ch = input()
 
-# Check vowel or consonant
-if ch in ['a', 'e', 'i', 'o', 'u']:
-    print("Vowel")
+# Check digit or alphabet
+if ch.isdigit():
+    print("Digit")
 elif ch.isalpha():
-    print("Consonant")
+    print("Alphabet")
 else:
-    print("Invalid Input")
+    print("Special Character")
